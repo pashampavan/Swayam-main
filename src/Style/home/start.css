@@ -1,0 +1,194 @@
+
+.svgs{
+	width: 600px;
+	position: absolute;
+	left:5%;
+	top:20%;
+	z-index: -1;
+}
+
+.landingPage{
+	min-height: 95vh;
+	width: 100%;
+	color: rgb(51, 80, 97);
+	position: relative;
+	top: 0;
+	margin: 0 auto 120px;
+	background-image: url(./../../illustrations/hp.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+
+.landingPageText{
+	position:absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.landingPage h1{
+	font-size: 60px;
+	/* padding-top: 20%; */
+	
+	font-weight: 1000;
+	font-family: 'Lexend Deca', sans-serif;
+}
+
+.landingPage p{
+	font-size: 30px;
+	text-align: center !important;
+}
+
+.about{
+	margin: 100px auto;
+	position: relative;
+}
+
+.about .svgs img{
+	position: absolute;
+	top:50%;
+	background-color:red;
+}
+
+.about h3{
+	font-size: 40px;
+	text-align: left;
+	margin: 0 0 0 10%;
+	font-weight: bold;
+}
+.about_text{
+	font-size: 18px;
+	width: 70%;
+	/* text-align: justify; */
+	line-height: 1.6;
+	font-family: 'Proxima Nova';
+	/* background-color: red; */
+	margin-left: 20%;
+	margin-bottom: 8%;
+	color: #335061;
+}
+
+.marquee-container {
+	/* background-color: red; */
+	height: 100px !important;
+	overflow: hidden;
+	line-height: 30px;
+	margin: 60px auto;
+  }
+  .marquee-container .marquee {
+	top: 0;
+	left: 100%;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	/* background-color: blue; */
+	color: #335061;
+	/* animation: marquee 30s linear infinite; */
+  }
+  .marquee-container .marquee2 {
+	animation-delay: 15s;
+  }
+  .marquee-container b {
+	padding-left: 10px;
+  }
+  
+  @keyframes marquee {
+	0% {
+	  left: 10%;
+	}
+	100% {
+	  left: -100%;
+	}
+  }
+
+  .marquee span{
+	text-transform: uppercase;
+	padding: 20px 40px;
+	font-size: 60px;
+  }
+
+
+
+
+  .marq-container {
+	/* background-color: red; */
+	height: 100px !important;
+	overflow: hidden;
+	line-height: 30px;
+	margin: 60px auto;
+  }
+  .marq-container .marq {
+	top: 0;
+	left: 100%;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	/* background-color: blue; */
+	color: #335061;
+	animation: marq 30s linear infinite;
+  }
+  .marq-container .marq2 {
+	animation-delay: 15s;
+  }
+  .marq-container b {
+	padding-left: 10px;
+  }
+  
+  @keyframes marq {
+	0% {
+	  left: 100%;
+	}
+	100% {
+	  left: 100%;
+	}
+  }
+
+  .marquee span{
+	text-transform: uppercase;
+	padding: 20px 40px;
+	font-size: 60px;
+  }
+@media only screen and (max-width: 798px) {
+	.landingPage{
+		/* background-color: #335061; */
+		min-height: 100vh;
+		width:100%;
+	}
+    .landingPage h1{
+		font-size:50px;
+		padding-top: 100%;
+		font-weight: 1000;
+	}
+	
+	.landingPage p{
+		font-size: 20px;
+	}
+
+	.landingPageText{
+		position:absolute;
+		top:23%;
+		/* left: 50%;
+		transform: translate(-50%,-50%); */
+	}
+
+	.about h2{
+		font-size: 35px;
+		margin-left: 10%;
+	}
+	.about_text{
+		font-size: 16px;
+		width: 80%;
+		text-align: justify;
+		line-height: 1.6;
+		font-family: 'Proxima Nova';
+		/* background-color: red; */
+		margin-left: 10%;
+	}
+	
+}

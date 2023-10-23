@@ -1,0 +1,144 @@
+.footer{
+  width:100%;
+  /* background-color: red; */
+  margin-top: 100px;
+}
+
+h2{
+  text-align: center;
+  margin-top: 25px !important;
+  /* background-color: red; */
+}
+
+.rows{
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 20px;
+  height: 100%;
+  width:90%;
+  margin: 0 auto;
+}
+
+.cols{
+  height: 100% !important;
+  justify-content: center;
+  align-items: center;
+
+  color: #335061;
+  /* background-color: red; */
+  padding-bottom: 60px;
+}
+
+
+
+.quickLinks{
+  width:90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  text-align: left;
+  padding-top: 10%;
+  /* border-bottom: 1px dotted #335061; */
+}
+
+.cols ul li{
+  list-style: none;
+  cursor: pointer;
+  line-height: 1.6;
+  margin: 5px auto !important;
+}
+
+.cols p{
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+
+.socialsAndCopyright{
+  width:90%;
+  /* background-color: red; */
+  margin: 0 auto;
+  padding-top: 40px;
+  text-align: center !important;
+}
+
+.socialsAndCopyright div{
+  margin-bottom: 20px;
+}
+
+.footerHeadings{
+  /* background-color: red; */
+  padding-bottom: 20px !important;
+}
+
+a{
+  cursor: pointer;
+  font-size: 14px !important;
+  line-height: 1.6;  
+  color: rgba(51, 80, 97, 0.8) !important;
+}
+
+a:hover{
+  color: #EB4438 !important;
+}
+
+.mapLink{
+  text-align: center !important;
+  /* background-color: red; */
+  width: 300px;
+  color: #335061;
+}
+
+.socialLinks a{
+  margin:0 10px;
+}
+
+@media only screen and (max-width: 798px) {
+  .quickLinks{
+    width:100%;
+    /* margin: 30px auto !important; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 0px;
+    text-align: left;
+    /* background-color: red; */
+  }
+
+  .linksOne,
+  .linksTwo,
+  .linksThree{
+    padding-top: 25px;
+  }
+
+  .linksOne ul,
+  .linksTwo ul,
+  .linksThree ul{
+    margin: 0;
+    padding: 0;
+  }
+
+  .cols{
+    padding: 0;
+    margin: 0;
+  }
+
+  .rows{
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+    align-items: left;
+    justify-content: left;
+    height: 100%;
+    width:90%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  
+}
+
+
+

@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;600&family=Montserrat:ital,wght@0,400;1,300;1,400;1,500&family=Poppins:wght@100&display=swap');:root
+{
+
+  --text-color1: #335061;
+  /* --text-color2: #eb4438; */
+  --text-color2:#6b8793;
+
+  /* --back--color: rgb(197, 215, 231); */
+
+  --back--color:rgb(255, 255, 255);
+  /* --back--color:#6b8793 */
+
+
+}
+
+.teamPage h1,
+.teamPage h2
+{
+  font-family: 'Lexend Deca', sans-serif;
+  /* margin-left: 10%; */
+  font-weight: bolder;
+  color: #EB4438;
+  font-size: 45px;
+  width: 70%;
+  margin: 0 auto;
+  /* background-color: red; */
+}
+
+.teamPage{
+  margin-top: 8%;
+}
+
+.teamPage p
+{
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+
+.teamPage h2
+{
+  margin-top:60px !important;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: 40px;
+  /* margin-left: 15vh; */
+}
+
+
+
+
+
+
+.outerCards
+{
+  display: grid;
+  width: 70%;
+  margin: 8vh auto;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 15px;
+  /* align-items: center; */
+  justify-content:space-around;
+  /* justify-items:end */
+  
+}
+
+.TeamN
+{
+  transition: text-decoration 0.4s ease-in-out;
+  text-decoration: underline solid transparent;
+  margin-top: 0;
+  padding-top: 4vh;
+  color: #335061 !important;
+  
+
+}
+.PageN
+{
+  color:#EB4438;
+  background-color: transparent;
+}
+
+.crop
+{
+  width: min(32vh,360px); 
+  height: auto;
+  object-fit: cover;
+  object-position: 50% 20%;
+
+}
+
+.core
+{
+  display: flex;
+  /* border-radius: 5px; */
+}
+
+
+.headOfDepts .card
+{
+
+    margin: 0%;
+    /* margin-inline: 4%; */
+
+}
+
+.deptbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-style: solid;
+    /* border-bottom: #335061 !important;*/
+    border-top: #335061 !important; 
+    border-left: #335061 !important;
+    border-right: #335061 !important;
+    
+    /* border-radius: 5px; */
+    padding-inline: min(2rem,7%);
+}
+.btn
+{
+
+
+/* height; */
+height: 50%;
+background-color: aliceblue;
+border-color:var(--text-color1);
+border-radius: 4px;
+/* width: ; */
+
+
+
+}
+
+.bdr
+{
+    margin-top: 4rem;
+    margin-inline: 20%;
+    padding-inline: min(2rem,0px);
+}
+
+.deptblock
+{
+
+
+    /* margin-bottom: 12%; */
+    /* padding: 5rem; */
+    padding-bottom: 5rem;
+
+}
+
+
+.dept h3
+{
+
+    margin-right: 70px;
+    /* padding-top: 7px; */
+}
+
+.dept p
+{
+
+    margin-right: 2%;
+
+}
+
+.dept h3
+{
+    /* padding: 10px; */
+}
+.dept
+{
+    margin: 5%;
+    width: clamp(200px,50%,220px);
+    /* padding: 5%; */
+    /* width: 20px; */
+    /* width: clamp(180px,80%,px); */
+
+    /* background-color: aqua; */
+}
+
+.select{
+    padding: 6px;
+    /* width:200px; */
+    /* margin-left: 15%; */
+    color: #335061;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.selectOption{
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.tenure{
+  width: 100%;
+}
+
+
+.accordion {
+  width: 80%;
+  margin: 2rem auto;
+  box-shadow: none !important;
+}
+
+.accordion-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  border-top: 1px solid #6b8793;
+  font-family: 'Lexend Deca';
+  /* background-color: #21aeca; */
+}
+
+
+.accordion-title{
+  padding: 20px;
+  background-color: transparent !important;
+}
+
+.accordion-content {
+  padding: 20px 20px 40px;
+  background-color: transparent !important;
+}
+
+.accordion-content {
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-gap:30px;
+  text-align: left;
+}
+
+.accordionDeptName{
+  font-size: 25px;
+  background-color: transparent !important;
+}
+
+.collapse{
+  font-size: 25px;
+  z-index: 100;
+  color: #EB4438;
+}
+
+.teamMember h5{
+  font-size: 18px;
+  color: #EB4438;
+  font-family: 'Proxima Nova';
+  margin-bottom: 2px;
+}
+
+.teamMember p{
+  padding: 0;
+  margin: 1px;
+  font-size: 12px;
+  font-family: 'Lexend Deca';
+}
+
+@media screen and (max-width: 798px) {
+  .outerCards
+  {
+    display: flex;
+    display: grid;
+    width: 85%;
+    margin: 8vh auto;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap:30px;
+    justify-content:space-around;
+  }
+
+  .teamPage h1,
+  .teamPage h2
+  {
+    margin-left: 7.5%;
+    font-weight: bolder;
+    color: #EB4438;
+    font-size: 26px;
+  }
+
+  .teamPage{
+    margin-top: 28%;
+  }
+  
+
+  .select{
+    color: #335061;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    min-width: 100%;
+  }
+
+  .selectOption{
+    display: flex;
+    width: 90%;
+    margin: 0 auto; 
+    background-color: red;
+  }
+
+  .accordion {
+    width: 90%;
+  }
+
+  .accordion-content {
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:20px;
+  }
+}

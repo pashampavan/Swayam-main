@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Poppins&display=swap');
+
+body{
+  /* background-color: red !important; */
+  line-height: 1.6;
+}
+
+@font-face {
+  font-family: 'Proxima Nova',sans-serif;
+  src: url(./../src/fonts/Proxima\ Nova\ Font.otf);
+  font-weight: 600;
+}

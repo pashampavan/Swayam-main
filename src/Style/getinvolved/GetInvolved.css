@@ -1,0 +1,133 @@
+.why img{
+    width:30%;
+}
+
+.shape{
+    position: relative;
+    top:10%;
+    right: 10%;
+    width:50%;
+}
+
+.getInvolvedPage{
+    width: 70%;
+    margin: 10% auto;
+}
+
+.getInvolvedPage h1,
+.getInvolvedPage h3{
+    color: #EB4438;
+    margin:50px 0 40px;
+    font-weight: bolder;
+    text-align: left !important;
+}
+
+.getInvolvedPage p{
+    color: #335061;
+    margin-bottom: 40px;
+    font-family: 'Lexend Deca',sans-serif;
+}
+
+p.question{
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.benefits{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:20px;
+}
+
+.benefitItem{
+    background-color: rgba(51, 80, 97, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.benefits h5{
+    font-weight: bolder;
+    color: #EB4438;  
+}
+
+.benefits p{
+    font-size: 14px;
+    color: #335061;
+    padding: 0;
+    margin: 0;  
+}
+
+.PrDeptDetails h6{
+    color: #335061;
+}
+.PrDeptDetails h5{
+    font-weight: bolder;
+}
+
+.PrDeptDetails span{
+    color: #EB4438;
+    font-weight: bolder;
+}
+
+.PrDeptDetails p{
+    padding: 0;
+    margin: 5px 0;
+}
+
+@media only screen and (max-width: 798px) {
+    .why img{
+        width:100%;
+    }
+    
+    .getInvolvedPage{
+        width: 80%;
+        margin: 30% auto;
+    }
+    
+    .getInvolvedPage h1,
+    .getInvolvedPage h3{
+        color: #EB4438;
+        margin:50px 0 40px;
+        font-weight: bolder;
+        text-align: left !important;
+    }
+    
+    .getInvolvedPage p{
+        color: #335061;
+        margin-bottom: 40px;
+        font-family: 'Lexend Deca',sans-serif;
+    }
+    
+    p.question{
+        margin: 0 0 10px 0;
+        padding: 0;
+        font-weight: bold;
+        font-size: 17px;
+    }
+    
+    .benefits{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap:20px;
+    }
+    
+    .benefitItem{
+        background-color: rgba(51, 80, 97, 0.1);
+        border-radius: 5px;
+        padding: 20px;
+    }
+    
+    .benefits h5{
+        font-weight: bolder;
+        color: #EB4438;  
+    }
+    
+    .benefits p{
+        font-size: 14px;
+        color: #335061;
+        padding: 0;
+        margin: 0;  
+    }
+}

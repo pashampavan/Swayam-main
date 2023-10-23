@@ -1,0 +1,112 @@
+.blogsContainer{
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    text-align: left;
+}
+
+.blogsChangingHeading{
+    text-align: left !important;
+    width: 80%;
+    position: absolute;
+    top:35%;
+    left:10%;
+    /* background-color: blue; */
+}
+
+.blogsChangingHeading h1{
+    text-align: left !important;
+    font-size: 70px;
+    color: #335061;
+    padding-bottom: 30px;
+}
+
+.content-items{
+    padding-top: 50px;
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+    grid-row-gap: 40px;
+}
+
+.tabsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background: #f1f1f1;
+    margin: 0 10% 0;
+    word-break: break-all;
+}
+  
+.bloc-tabs {
+    display: flex;
+    width:100%;
+}
+.tabs {
+  padding: 15px;
+  text-align: center;
+  width: 8%;
+  background: rgba(128, 128, 128, 0.075);
+  cursor: pointer;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  box-sizing: content-box;
+  position: relative;
+  outline: none;
+}
+.tabs:not(:last-child){
+  border-right: 1px solid rgba(0, 0, 0, 0.274);
+}
+  
+.active-tabs  {
+  background: #335061;
+  color: #fff;
+  /* border-bottom: 1px solid transparent; */
+}
+  
+button {
+  border: none;
+}
+.content-tabs {
+  position: relative;
+}
+.content {
+  background: white;
+  /* padding: 20px; */
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.content h2 {
+    padding: 0px 0 5px 0px;
+}
+.content hr {
+  width: 100px;
+  height: 2px;
+  background: #222;
+  margin-bottom: 5px;
+}
+.content p {
+  width: 100%;
+  height: 100%;
+}
+.active-content {
+  display: block;
+}
+
+@media only screen and (max-width: 798px) {
+  .blogsContainer{
+    height: 75vh;
+  }
+  .content-items{
+    padding-top: 50px;
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-row-gap: 40px;
+  }
+
+  .tabs {
+    width: 30%;
+  }
+}

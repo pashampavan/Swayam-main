@@ -1,0 +1,53 @@
+.yourForm h1{
+    color: #335061;
+}
+
+input{
+    border: 1px solid #335061 !important;
+    border-radius: 4px !important;
+}
+
+.form-label{
+    color: #335061 !important;
+    /* background-color: red !important; */
+}
+
+button[type='submit']{
+    background-color: #EB4438 !important;
+    width:25%;
+    border-radius: 4px !important;
+    color: #fff;
+    margin: 30px auto;
+}
+
+.container{
+    margin-top: 10% !important;
+    /* background-color: rgba(51, 80, 97,0.8); */
+    border: 0.5px solid #335061;
+    border-radius: 4px;
+}
+
+select,
+textarea{
+    border: 0.5px solid #335061 !important;
+    border-radius: 4px;
+}
+
+.btn,
+h1{
+    text-align: center !important;
+}
+
+h1{
+    font-weight: bolder !important;
+}
+
+@media only screen and (max-width: 798px) {
+    .container{
+        margin-top: 40% !important;
+        width: 90% !important;
+    }
+    button[type='submit']{
+        width:90%;
+    }
+}
