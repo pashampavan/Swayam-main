@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Swayam-main/static/css/main.cf0c24b5.css",
+    "main.css": "/Swayam-main/static/css/main.d7b90b6e.css",
     "main.js": "/Swayam-main/static/js/main.ede4dd62.js",
     "static/media/hp.svg": "/Swayam-main/static/media/hp.eb74f51d42827960212c.svg",
     "static/media/eplexus1.jpg": "/Swayam-main/static/media/eplexus1.60ef9d1bf3dd64026c09.jpg",
@@ -27,11 +27,11 @@
     "static/media/gmail.png": "/Swayam-main/static/media/gmail.57ca3e3b202d8085d23e.png",
     "static/media/planandpitch.jpg": "/Swayam-main/static/media/planandpitch.3c58ff299d6759a1e2a0.jpg",
     "index.html": "/Swayam-main/index.html",
-    "main.cf0c24b5.css.map": "/Swayam-main/static/css/main.cf0c24b5.css.map",
+    "main.d7b90b6e.css.map": "/Swayam-main/static/css/main.d7b90b6e.css.map",
     "main.ede4dd62.js.map": "/Swayam-main/static/js/main.ede4dd62.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf0c24b5.css",
+    "static/css/main.d7b90b6e.css",
     "static/js/main.ede4dd62.js"
   ]
 }
