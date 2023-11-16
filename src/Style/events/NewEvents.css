@@ -30,7 +30,10 @@
     grid-gap:25px;
     height: 300px;
 }
-
+#event
+{
+    width: 60%;
+}
 .eventItems.initiate{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -40,10 +43,19 @@
 
 
 @media only screen and (max-width: 798px) {
+    #event p
+    {
+        font-size: 11px;
+    }
     .eventsPage{
         width: 80%;
         margin: 35% auto 10%;
         position: relative;
+        
+    }
+    #event
+    {
+        width: 80%;
     }
     
     .eventsPage h2{
@@ -63,7 +75,7 @@
         display: grid;
         grid-template-columns: repeat(1,1fr);
         grid-gap:25px;
-        height: 800px !important;
+        height: 400px !important;
     }
     
     .eventItems.initiate{

@@ -35,13 +35,16 @@ function Event() {
     useEffect(() => {
         fetchEvents();
     }, []);
-
-   
     useEffect(() => {
     if (data) {
         const currentDate = new Date();
         const events = Object.values(data);
-
+        const keys=Object.keys(data);
+        for(var i=0;i<events.length;i++)
+        {
+            events[i].id2=keys[i];
+            console.log(events[i]);
+        }
         const upcoming = events.filter(event => {
         const eventDate = new Date(event.eventdate);
         return eventDate > currentDate;
@@ -56,6 +59,7 @@ function Event() {
         setPastEvents(past);
     }
     }, [data]);
+    const eventIds = Object.keys(data);
   return (
     <>
         <div className='eventsPage'>
@@ -64,11 +68,11 @@ function Event() {
                 {upcomingEvents.length > 0
                     ?
                     <>
+                        <div className='eventItems'>
                     {upcomingEvents.map((item) => {
-                        return <div className='eventItems'>
-                             <NextEvent url={item.eventurl} image={item.eventimageone}/>
-                         </div>
-                    })}
+                            return <NextEvent url={item.eventurl} eventimageone={item.eventimageone} id={JSON.stringify(item)} eventtitle={item.eventtitle} eventdate={item.eventdate} eventimagetwo={item.eventimagetwo} id2={item.id2}/>
+                            })}
+                            </div>
                     </>
                     :
                     <h3>Hold tight, We are planning!</h3>
@@ -80,11 +84,15 @@ function Event() {
                 
                 {pastEvents.length > 0
                     ?
-                        <div className='eventItems past'>
+                    <>
+                            <div className='eventItems'>
                             {pastEvents.map((item) => {
-                                return <PastEvents eventName={item.eventtitle} url={item.eventurl} image={item.eventimagetwo}/>    
+                                return <>
+                                <PastEvents url={item.eventurl} eventimageone={item.eventimageone} id={JSON.stringify(item)} eventtitle={item.eventtitle} eventdate={item.eventdate} eventimagetwo={item.eventimagetwo} id2={item.id2}/>    
+                                </>
                             })}
-                        </div>
+                            </div>
+                            </>
                     :
                     <h3>Hold tight, We are planning!</h3>
                     

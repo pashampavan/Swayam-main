@@ -13,7 +13,7 @@ export default function Footer() {
     <div className="footer">
       <div className="rows">
         <div className="cols">
-          <img src={Logo} width="60%" style={{margin:'2% 20%'}}></img>
+          <img src={Logo} width="60%" style={{margin:'2% 20%'}} alt="Description of the image"></img>
           <h2>
             Address:
           </h2>

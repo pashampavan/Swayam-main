@@ -15,7 +15,7 @@ function NavBar() {
       <div className='navbar'>
         <div className='logo'>
           <Link to='/'>
-            <img src={Logo}></img>
+            <img src={Logo} alt="Description of the image"></img>
           </Link>
         </div>
         <div className='navItems'>

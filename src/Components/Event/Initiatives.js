@@ -25,6 +25,7 @@ function Initiatives({initiativeName, url, image}) {
                     borderColor:"transparent !important",
                     zIndex:"1"
                   }}
+                  alt="Description of the image"
                 ></img>}
                 
             </div>

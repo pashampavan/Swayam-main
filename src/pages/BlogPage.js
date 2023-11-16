@@ -28,7 +28,6 @@ const BlogPage = () => {
   }, [])
 
   const blogIds = Object.keys(blogs);
-
   return (
     <>
         <div className='blogsContainer'>

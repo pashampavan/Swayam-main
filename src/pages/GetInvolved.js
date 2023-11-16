@@ -10,7 +10,7 @@ function GetInvolved() {
         <div className='getInvolvedPage'>
            
             <div className='why'>
-                <img src={Collab}></img>
+                <img src={Collab} alt="Description of the image"></img>
                 <h1>Why associate with us?</h1>
                 <p> Entrepreneurs improve the lives of individuals and communities, as well as the overall economy. The benefits of entrepreneurship extend beyond the businesses they establish. For all the benefits entreprenuership offers to individuals, the society and to the country overall, Swayam - E cell, Vasavi College of Engineering is working towards the development of new entreprenuers and fueling their journeys.   
                     <br></br><br></br>             

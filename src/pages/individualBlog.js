@@ -2,8 +2,9 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useLocation, useParams } from 'react-router-dom'
 import apiServices from '../services/apiServices';
+import './../Style/events/NextEvent.css'
 const IndividualBlog = () => {
-  const { id } = useParams();
+  const { id ,msg} = useParams();
   const [data,setData] = useState();
   const location = useLocation();
     const fetchBlog = async () => {
@@ -29,10 +30,13 @@ const IndividualBlog = () => {
 
   return (
     <>
-    {data && <div className='getInvolvedPage' style={{width:"60%"}}>
+    {data && <div className='getInvolvedPage' id="event" >
         <h3 style={{margin:"5px auto"}}><b>{data.blogtitle}</b></h3>
         <p>{formatDate(data.blogdate)}</p>
-        <img src={data.blogthumbnail} width={'100%'}></img>
+        <img src={data.blogthumbnail} className="img" alt="Description of the image"></img>
+        <br/>
+        <br/>
+        <p>{data.blogdescription}</p>
         {data.blogcontent.map((item, id) => {
             if('heading' in item)
               return <h4 style={{width:"100%", margin:"20px auto"}}><b>{item.heading}</b></h4>
@@ -41,7 +45,7 @@ const IndividualBlog = () => {
             else if('paragraph' in item)
               return <p style={{width:"100%", margin:"20px auto"}}>{item.paragraph}</p>
             else if('image' in item)
-              return <img width={'100%'} src={item.image}></img>
+              return <img className="img" src={item.image} alt="Description of the image"></img>
             else if('quote' in item)
               return <div style={{width:"100%", margin:"20px auto", backgroundColor:"lightblue", fontStyle:'italic', padding:"14px", borderLeft:"5px solid #065f7d"}}>"{item.quote}"</div>
             else if('note' in item)

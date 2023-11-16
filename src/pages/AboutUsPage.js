@@ -127,7 +127,7 @@ const AboutUsPage = () => {
       {Dept.map((names) => {
         return <div className={(names.id%2 === 0) ?'deptInformation r':'deptInformation l'}> 
           <div className='deptImage'>
-            <img src={mappings[names.name]}></img>
+            <img src={mappings[names.name]} alt="Description of the image"></img>
           </div>
           <div className='deptContent'>
             <div className='deptName'>{names.name}</div>

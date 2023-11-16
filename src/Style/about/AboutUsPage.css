@@ -512,7 +512,13 @@ ul li a {
 		width: 100%;
 		transform: translateX(-20px);
 	}
-
+    .heads {
+        margin: 10% 10%;
+    }
+    .about
+    {
+        margin: 40px auto;
+    }
     .containers ul{
         width: 100%;
     }
@@ -579,8 +585,10 @@ ul li a {
         grid-template-columns: 1fr;
         grid-row-gap:20px;
         width:80%;
-        margin: 50% 10%;
         font-size: 15px;
+    }
+    .heads .aboutLeft p{
+        font-size: 40px;
     }
 }
 
@@ -595,8 +603,3 @@ ul li a {
 		left: -20px;
 	}
 }
-    
-
-
-
-

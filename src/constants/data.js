@@ -6,6 +6,12 @@ const TeamMembers = [
         department:"Web Development"
     },
     {
+        name:"Pasham Pavan Kumar Reddy",
+        rollNo:"1602-21-737-159",
+        branchSection:"IT",
+        department:"Web Development"
+    },
+    {
         name:"Ahmed Salahuddin Suhaib",
         rollNo:"1602-19-735-065",
         branchSection:"ECE",

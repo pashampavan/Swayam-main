@@ -1,5 +1,6 @@
 import React from 'react'
 import './../../Style/blogs/BlogThumbnail.css'
+import './../../Style/events/NextEvent.css';
 import { useNavigate } from 'react-router-dom';
 function BlogThumbnail({blogtitle,blogdescription,date, blogthumbnail, id}) {
     const formatDate = (dateString) => {
@@ -7,9 +8,7 @@ function BlogThumbnail({blogtitle,blogdescription,date, blogthumbnail, id}) {
         const date = new Date(dateString);
         return date.toLocaleDateString('en-US', options);
       };
-
       const navigate = useNavigate();
-      
       const originalDateString = date;
       const formattedDate = formatDate(originalDateString);
       console.log(formattedDate); // Output: Jul 06, 2023
@@ -18,9 +17,14 @@ function BlogThumbnail({blogtitle,blogdescription,date, blogthumbnail, id}) {
       const year = formattedDate.slice(8)
   return (
     <>
-        <div className='thumbnailContainer'>
+        <div className='thumbnailContainer' style={{cursor:"pointer"}}
+        onClick={() => {
+            navigate(`/blog/${id}`)
+            }
+        }
+        >
             <div className='thumbnailImage'>
-                <img src={blogthumbnail}></img>
+                <img src={blogthumbnail} alt="Description of the image"></img>
             </div>
             <div className='thumbnailDetails'>
                 <div className='thumbnailDate'>
@@ -35,7 +39,7 @@ function BlogThumbnail({blogtitle,blogdescription,date, blogthumbnail, id}) {
                         <div className='thumbnailDescription'>
                             <p>{blogdescription}</p>
                         </div>
-                        <div 
+                        {/* <div 
                             className='thumbnailLinks' 
                             onClick={() => {
                                 navigate(`/blog/${id}`)
@@ -43,7 +47,7 @@ function BlogThumbnail({blogtitle,blogdescription,date, blogthumbnail, id}) {
                             }
                         >
                             <a target="_blank">Read More</a>
-                        </div>
+                        </div> */}
                 </div>
             </div>
         </div>

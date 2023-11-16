@@ -160,14 +160,19 @@
 		min-height: 100vh;
 		width:100%;
 	}
+	.landingPage p{
+		font-size: 14px;
+		margin-top: 0px;
+	}
     .landingPage h1{
-		font-size:50px;
-		padding-top: 100%;
+		font-size:40px;
+		padding-top: 57%;
 		font-weight: 1000;
 	}
 	
 	.landingPage p{
-		font-size: 20px;
+		font-size: 15px;
+		margin-top: 0px;
 	}
 
 	.landingPageText{
