@@ -21,37 +21,37 @@ function NavBar() {
         <div className='navItems'>
           <ul>
             <li>
-              <Link to="/">
+              <Link to="swayam-main/">
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/about">
+              <Link to="swayam-main/about">
                 About
               </Link>
             </li>
             <li>
-              <Link to="/blogs">
+              <Link to="swayam-main/blogs">
                 Blogs
               </Link>
             </li>
             <li>
-              <Link to="/team">
+              <Link to="swayam-main/team">
                 Team
               </Link>
             </li>
             <li>
-              <Link to="/events">
+              <Link to="swayam-main/events">
                 Events
               </Link>
             </li>
             <li>
-              <Link to="/getinvolved">
+              <Link to="swayam-main/getinvolved">
                 Get Involved
               </Link>
             </li>
             <li>
-              <Link to="/contact">
+              <Link to="swayam-main/contact">
                 Contact
               </Link>
             </li>

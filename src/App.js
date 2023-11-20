@@ -16,18 +16,18 @@ function App() {
   return (
     <>
       <NavBar />
-      <Routes>
-        <Route path='/Swayam-main' element={<HomePage/>}/>
-        <Route path='/' element={<HomePage/>}/>
-        <Route path='/team' element={<TeamPage/>}/>
-        <Route path='/contact' element={<ContactUsPage/>}/>
-        <Route path='/about' element={<AboutUsPage/>}/>
-        <Route path='/blogs' element={<BlogPage/>}/>
-        <Route path='/events' element={<Event/>}/>
-        <Route path='/getinvolved' element={<GetInvolved/>}/>
-        <Route path='/blog/:id' element={<IndividualBlog />} />
-        <Route path='/event' element={<Individualevent />} />
-      </Routes>
+      <Routes basename="/swayam-main">
+        <Route exact path='/swayam-main' element={<HomePage/>}/>
+        <Route exact path='/' element={<HomePage/>}/>
+        <Route exact path='/team' element={<TeamPage/>}/>
+        <Route exact path='/contact' element={<ContactUsPage/>}/>
+        <Route exact path='/about' element={<AboutUsPage/>}/>
+        <Route exact path='/blogs' element={<BlogPage/>}/>
+        <Route exact path='/events' element={<Event/>}/>
+        <Route exact path='/getinvolved' element={<GetInvolved/>}/>
+        <Route exact path='/blog/:id' element={<IndividualBlog />} />
+        <Route exact path='/event' element={<Individualevent />} />
+      </Routes >
     </>
   );
 }
