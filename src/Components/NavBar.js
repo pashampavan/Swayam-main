@@ -21,7 +21,7 @@ function NavBar() {
         <div className='navItems'>
           <ul>
             <li>
-              <Link to="swayam-main/">
+              <Link to="/swayam-main">
                 Home
               </Link>
             </li>

@@ -16,17 +16,17 @@ function App() {
   return (
     <>
       <NavBar />
-      <Routes basename="/swayam-main">
-        <Route exact path='/swayam-main' element={<HomePage/>}/>
-        <Route exact path='/' element={<HomePage/>}/>
-        <Route exact path='/team' element={<TeamPage/>}/>
-        <Route exact path='/contact' element={<ContactUsPage/>}/>
-        <Route exact path='/about' element={<AboutUsPage/>}/>
-        <Route exact path='/blogs' element={<BlogPage/>}/>
-        <Route exact path='/events' element={<Event/>}/>
-        <Route exact path='/getinvolved' element={<GetInvolved/>}/>
-        <Route exact path='/blog/:id' element={<IndividualBlog />} />
-        <Route exact path='/event' element={<Individualevent />} />
+      <Routes>
+        <Route  path='/' element={<HomePage/>}/>
+        <Route  path='/swayam-main' element={<HomePage/>}/>
+        <Route  path='/swayam-main/team' element={<TeamPage/>}/>
+        <Route  path='/swayam-main/contact' element={<ContactUsPage/>}/>
+        <Route  path='/swayam-main/about' element={<AboutUsPage/>}/>
+        <Route  path='/swayam-main/blogs' element={<BlogPage/>}/>
+        <Route  path='/swayam-main/events' element={<Event/>}/>
+        <Route  path='/swayam-main/getinvolved' element={<GetInvolved/>}/>
+        <Route  path='/swayam-main/blog/:id' element={<IndividualBlog />} />
+        <Route  path='/swayam-main/event' element={<Individualevent />} />
       </Routes >
     </>
   );
