@@ -19,7 +19,7 @@ function BlogThumbnail({blogtitle,blogdescription,date, blogthumbnail, id}) {
     <>
         <div className='thumbnailContainer' style={{cursor:"pointer"}}
         onClick={() => {
-            navigate(`/blog/${id}`)
+            navigate(`/blog/${id}`);
             }
         }
         >

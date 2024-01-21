@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import {Link} from 'react-router-dom';
 import './NavBar.css'
-import Logo from './../images/logo.png'
+import Logo from './logo.png'
 import Instagram from './../icons/instagram.png'
 import LinkedIn from './../icons/linkedin.png'
 import Gmail from './../icons/gmail.png'
-
+import { BrowserRouter } from 'react-router-dom';
 function NavBar() {
   const [isClicked, setIsClicked] = useState(false);
   const [checked, setChecked] = React.useState(false);
@@ -21,37 +21,37 @@ function NavBar() {
         <div className='navItems'>
           <ul>
             <li>
-              <Link to="/swayam-main">
+              <Link to="/">
                 Home
               </Link>
             </li>
             <li>
-              <Link to="swayam-main/about">
+              <Link to="/about">
                 About
               </Link>
             </li>
             <li>
-              <Link to="swayam-main/blogs">
+              <Link to="/blogs">
                 Blogs
               </Link>
             </li>
             <li>
-              <Link to="swayam-main/team">
+              <Link to="/team">
                 Team
               </Link>
             </li>
             <li>
-              <Link to="swayam-main/events">
+              <Link to="/events">
                 Events
               </Link>
             </li>
             <li>
-              <Link to="swayam-main/getinvolved">
+              <Link to="/getinvolved">
                 Get Involved
               </Link>
             </li>
             <li>
-              <Link to="swayam-main/contact">
+              <Link to="/contact">
                 Contact
               </Link>
             </li>

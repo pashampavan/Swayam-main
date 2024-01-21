@@ -1,5 +1,5 @@
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 import HomePage from './pages/HomePage.js';
 import TeamPage from './pages/TeamP';
 import ContactUsPage from './pages/ContactUsPage';
@@ -16,17 +16,17 @@ function App() {
   return (
     <>
       <NavBar />
-      <Routes>
+      <Routes basename="/" >
         <Route  path='/' element={<HomePage/>}/>
         <Route  path='/swayam-main' element={<HomePage/>}/>
-        <Route  path='/swayam-main/team' element={<TeamPage/>}/>
-        <Route  path='/swayam-main/contact' element={<ContactUsPage/>}/>
-        <Route  path='/swayam-main/about' element={<AboutUsPage/>}/>
-        <Route  path='/swayam-main/blogs' element={<BlogPage/>}/>
-        <Route  path='/swayam-main/events' element={<Event/>}/>
-        <Route  path='/swayam-main/getinvolved' element={<GetInvolved/>}/>
-        <Route  path='/swayam-main/blog/:id' element={<IndividualBlog />} />
-        <Route  path='/swayam-main/event' element={<Individualevent />} />
+        <Route  path='/team' element={<TeamPage/>}/>
+        <Route  path='/contact' element={<ContactUsPage/>}/>
+        <Route  path='/about' element={<AboutUsPage/>}/>
+        <Route  path='/blogs' element={<BlogPage/>}/>
+        <Route  path='/events' element={<Event/>}/>
+        <Route  path='/getinvolved' element={<GetInvolved/>}/>
+        <Route  path='/blog/:id' element={<IndividualBlog />} />
+        <Route  path='/event/' element={<Individualevent />} />
       </Routes >
     </>
   );
